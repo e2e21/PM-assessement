@@ -10,7 +10,7 @@
 
 主要完成的任务如下：
 
-1. **GitHub 基础了解：  **
+1. **GitHub 基础了解**：
 
 - **GitHub 是**一个基于 Git 的代码托管与写作平台。Git 是本地工具，GitHub 是云端服务。  
 - GitHub 主要用途有版本控制与备份、多人协作、参与开源、项目管理等。  
@@ -25,21 +25,21 @@
 - Pull(拉取)  
 - Branch(建分支)  
 - Commit(提交)  
- - gitignore：告诉Git **``.gitignore``** 的东西不要上传到 GitHub，被 commit 过的文件必须先用 ``git rm --cached`` 从版本库中踢出去，``.gitignore`` 才能生效  
-- **commit message**：规范``<type>(<scope>):<subject>`` + 空行 + ``<body>`` + 空行 + ``<footer>``  
-   -  Type(类型)  
-   - Scope(作用域)  
-   - Subject(主题)  
-   - Body(正文)  
-   - Footer(脚注)  
-   - 硬性限制：任何一行不得超过100字符  
+    - gitignore：告诉Git **``.gitignore``** 的东西不要上传到 GitHub，被 commit 过的文件必须先用 ``git rm --cached`` 从版本库中踢出去，``.gitignore`` 才能生效  
+    - **commit message**：规范``<type>(<scope>):<subject>`` + 空行 + ``<body>`` + 空行 + ``<footer>``  
+        -  Type(类型)  
+        - Scope(作用域)  
+        - Subject(主题)  
+        - Body(正文)  
+        - Footer(脚注)  
+        - 硬性限制：任何一行不得超过100字符  
 -  Push(推送)  
 -  发起PR(请求把Branch的改动合并到原作者的仓库里)  
- - 常见PR状态  
-    Open：正在讨论和审查中。  
-    Draft：草稿状态  
-    Merged：合并成功。  
-    Closed：被关闭了。
+    - 常见PR状态  
+        - Open：正在讨论和审查中。  
+        - Draft：草稿状态  
+        - Merged：合并成功。  
+        - Closed：被关闭了。
   
 ## 3. Markdown 书写  
 
@@ -47,4 +47,3 @@
  - 标题严格按层级书写，不跳级  
  - 代码的格式  
  - 中英文间空格  
- - 换行要至少在前一行末尾加
