@@ -22,7 +22,16 @@
 
 - Fork(复刻)  
 - Clone(克隆)  
-- Pull(拉取)  
+- Fetch(下载) 仅仅进行下载操作，不改变本地原仓库状态
+    - git fetch前：
+    
+    ![屏幕截图 2026-11-23 203313.png](https://note-pics-1538697009.cos.ap-guangzhou.myqcloud.com/img/20261123204624287.png)
+    
+	- git fetch后：
+	
+	![屏幕截图 2026-11-23 203256.png](https://note-pics-1538697009.cos.ap-guangzhou.myqcloud.com/img/20261123204807947.png)
+	
+- Pull(拉取)  git pull近乎是git fetch与下一次合并的简写
 - Branch(建分支)  
 - Commit(提交)  
     - gitignore：告诉Git **``.gitignore``** 的东西不要上传到 GitHub，被 commit 过的文件必须先用 ``git rm --cached`` 从版本库中踢出去，``.gitignore`` 才能生效  
