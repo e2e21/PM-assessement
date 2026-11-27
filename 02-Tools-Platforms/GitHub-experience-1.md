@@ -16,7 +16,7 @@
 - GitHub 主要用途有版本控制与备份、多人协作、参与开源、项目管理等。  
 - **Fork** 把别人仓库复制一份到自己 GitHub 账号下  
 -  **Pull Request(PR)** 修改拉取合并请求。常见于协作流程，在 Fork,Clone,Branch,修改并Commit,Push 之后，把改动合并到原作者的仓库里。  
-- **了解来源**有B站视频和 DeepSeek AI。  
+- **了解来源**：B站视频， DeepSeek AI，学习网站：  https://learngitbranching.js.org/?locale=zh_CN
 
 2. **GitHub 基本操作**  
 
@@ -33,7 +33,20 @@
 	
 - Pull(拉取)  git pull近乎是git fetch与下一次合并的简写
 - Branch(建分支)  
+	```
+	git branch xxx
+	git switch xxx
+	git commit
+	```
+	新建分支并切换分支到新分支上，再往新分支里提交新的东西
+	
 - Commit(提交)  
+    ```
+    git add .
+    git commit -m "commit message"
+    git push
+    ```
+    
     - gitignore：告诉Git **``.gitignore``** 的东西不要上传到 GitHub，被 commit 过的文件必须先用 ``git rm --cached`` 从版本库中踢出去，``.gitignore`` 才能生效  
     - **commit message**：规范``<type>(<scope>):<subject>`` + 空行 + ``<body>`` + 空行 + ``<footer>``  
         -  Type(类型)  
@@ -43,16 +56,37 @@
         - Footer(脚注)  
         - 硬性限制：任何一行不得超过100字符  
 -  Push(推送)  
+    ``git push`` 
 -  发起PR(请求把Branch的改动合并到原作者的仓库里)  
     - 常见PR状态  
         - Open：正在讨论和审查中。  
         - Draft：草稿状态  
         - Merged：合并成功。  
         - Closed：被关闭了。
-  
+  - Merge(合并)
+	  
+	- 两个分支都有新的commit
+	
+	![屏幕截图 2026-11-27 215204.png](https://note-pics-1538697009.cos.ap-guangzhou.myqcloud.com/img/20261127215903245.png)
+	
+	- 把 bugFix 合并到 main 里
+	``git merge buFix``
+	
+	![屏幕截图 2026-11-27 215229.png](https://note-pics-1538697009.cos.ap-guangzhou.myqcloud.com/img/20261127220345154.png)
+	
+	- 把 main 分支合并到 bugFix
+	```
+	git switch bugFix
+	git merge main
+	```
+	
+	![屏幕截图 2026-11-27 215245.png](https://note-pics-1538697009.cos.ap-guangzhou.myqcloud.com/img/20261127220646160.png)
+	
+
 ## 3. Markdown 书写  
 
 - 所运用的规范  
- - 标题严格按层级书写，不跳级  
- - 代码的格式  
- - 中英文间空格  
+    - 标题严格按层级书写，不跳级  
+    - 代码的格式  
+    - 中英文间空格  
+    - 图片前后空行
